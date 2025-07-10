@@ -43,7 +43,8 @@ window.addEventListener('PeerStateChanged', function (e) {
 
 });
 
-{$participant}.GetVideoDevices().then(function (cameras) {
+//test pullsight please add comment here on pr
+{$participant}?.GetVideoDevices()?.then(function (cameras) {
     $.each(cameras, function () {
         var option = document.createElement('option');
         option.id = this.id;
